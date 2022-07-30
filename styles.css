@@ -1,0 +1,262 @@
+@import "reset.css";
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+}
+/* General Styles */
+
+body {
+    direction: rtl;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.clearfix {
+    clear: both;
+}
+/* Header Styles */
+#header {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#header #logo {
+    margin-bottom: -66px;
+}
+
+#header #logo img {
+    width: 90px;
+    display: inline;
+}
+
+
+
+#header .titles {
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    right: 100px;
+}
+
+#header .titles h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#header .titles h2 {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+
+#header .users {
+    position: absolute;
+    top: 55px;
+    left: 10px;
+}
+
+#header .button {
+    text-decoration: none;
+    /* padding: 7px 15px; */
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+#header .login {
+    background-color: #206ce6;
+    color: #fff;
+}
+
+#header .register {
+    background-color: #2E7D32;
+    color: #fff;
+}
+
+#header .login:hover {
+    background-color: #034efc;
+}
+
+#header .register:hover {
+    background-color: #0a5405;
+}
+
+/* Navigation  Styles*/
+#navigation {
+    background-color: #263238;
+    margin-top: 20px;
+}
+
+#navigation ul li{
+    display: inline-block;
+}
+
+#navigation ul li a{
+    color: #fff;
+    padding: 20px 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;    
+    transition: background-color 0.25s;
+}
+
+#navigation ul li a:hover{
+    background-color: #37474F;
+    transition: 0.5s;
+}
+
+/* Content */
+#content {
+    width: 800px;
+    margin-top: 10px;
+    padding: 10px;
+    float: right;
+    box-sizing: border-box;
+}
+
+.post-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+.post-item:first-child {
+    margin-top: 0;
+}
+
+.post-item .post-title {
+    font-weight: bold;
+    border-bottom: 2px dashed #ccc;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.post-item .post-img img {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.post-item .post-img {
+    float: right;
+    margin: 10px;
+}
+
+.post-item .post-content {
+    padding: 5px;
+    line-height: 25px;
+    height: 246px;
+    overflow: hidden;
+
+}
+
+.post-item .post-data {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+}
+
+.post-data .read-more {
+    background-color: #212121;
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    padding: 5px;
+    display: inline-block;
+    left: 5px;
+    bottom: 7px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 290px;
+    padding: 10px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.sidebar-item {
+    background-color: white;
+    margin-top: 10px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+.sidebar-item .sidebar-header {
+    background-color: #212121;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px 3px 0 0;
+}
+
+.sidebar-item .sidebar-content {
+    padding: 10px;
+}
+
+#sidebar .category ul li a{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    color: #212121;
+    border-right: 2px solid #212121;
+    padding-right: 5px;
+}
+
+#sidebar .category ul li a:hover {
+    color: #212121;
+    margin-right: 5px;
+    border-right: 4px solid #1565C0;
+    transition: 0.25s;
+}
+
+#sidebar .newsletter {
+    text-align: center;
+}
+
+#sidebar .newsletter p {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+#sidebar .newsletter .email-box {
+    padding: 5px;
+    width: 90%;
+    margin-top: 10px;
+}
+
+#sidebar .newsletter .submit-btn {
+    margin-top: 10px;
+    border: none;
+    padding: 5px 15px;
+    background-color: #2E7D32;
+    color: #fff;
+    border-radius: 3px;
+}
+
+#sidebar .newsletter .submit-btn:hover {
+    background-color: #216425;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+#footer {
+    background-color: #212121;
+    padding: 30px;
+    box-sizing: border-box;    
+}
+
+#footer p {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
