@@ -1,11 +1,15 @@
 @import "reset.css";
 @font-face {
-    font-family: 'Roboto', sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    font-family: vazirNormal;
+    src: url('fonts/vazir.eot');
+    src: url('fonts/vazir.eot?#iefix') format('embedded-opentype'), url('fonts/vazir.woff2') format('woff2'), url('fonts/vazir.woff') format('woff'), url('fonts/vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
 }
 /* General Styles */
 
 body {
+    font-family: vazirNormal;
     direction: rtl;
     background-color: #f0f0f0;
 }
@@ -63,7 +67,7 @@ body {
 #header .button {
     text-decoration: none;
     /* padding: 7px 15px; */
-    padding: 10px 15px;
+    padding: 7px 15px;
     border-radius: 3px;
 }
 
@@ -229,12 +233,14 @@ body {
 }
 
 #sidebar .newsletter .email-box {
+    font-family: vazirNormal;
     padding: 5px;
     width: 90%;
     margin-top: 10px;
 }
 
 #sidebar .newsletter .submit-btn {
+    font-family: vazirNormal;
     margin-top: 10px;
     border: none;
     padding: 5px 15px;
